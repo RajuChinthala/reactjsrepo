@@ -6,17 +6,25 @@ import IceCreamContainer from "./components/IceCreamContainer.js";
 import HooksIceCreamContainer from "./components/HooksIceCreamContainer.js";
 import MultiCakeContainer from "./components/MultiCakeContainer.js";
 import store from "./redux/store.js";
+import MultiIceCreamContainer from "./components/MultiIceCreamContainer.js";
+import ItemContainer from "./components/ItemContainer.js";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
         <CakeContainer />
-        <HooksCakeContainer />
-        <br />
         <IceCreamContainer />
-        <HooksIceCreamContainer />
+
         <MultiCakeContainer />
+        <MultiIceCreamContainer />
+        <ItemContainer cake />
+        <ItemContainer />
+
+        <br />
+
+        <HooksCakeContainer />
+        <HooksIceCreamContainer />
       </div>
     </Provider>
   );

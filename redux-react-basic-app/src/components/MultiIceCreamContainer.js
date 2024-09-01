@@ -1,12 +1,17 @@
 import React from "redux";
 import { connect } from "react-redux";
 import buyIceCream from "../redux/icecream/iceCreamActions.js";
+import { useState } from "react";
 
 function IceCreamContainer(props) {
+  const [number, setNumber] = useState(1);
   return (
     <div>
-      <h1> Order Single: icecreams available : {props.noOfIceCreams} </h1>
-      <button onClick={props.buyIceCream}>Buy IceCream</button>
+      <h1>Multi Order: icecreams available : {props.noOfIceCreams} </h1>
+      <input value={number} onChange={(e) => setNumber(e.target.value)} />
+      <button onClick={() => props.buyIceCream(number)}>
+        Buy {number} IceCream
+      </button>
     </div>
   );
 }
@@ -18,7 +23,7 @@ const mapPropsToState1 = (state) => {
 };
 const mapPropsToDispatch1 = (dispatch) => {
   return {
-    buyIceCream: () => dispatch(buyIceCream()),
+    buyIceCream: (number) => dispatch(buyIceCream(number)),
   };
 };
 

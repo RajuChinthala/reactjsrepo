@@ -8,7 +8,7 @@ const IceCreamReducer = (state = initialState1, action) => {
     case BUY_ICECREAM: {
       return {
         ...state,
-        noOfIceCreams: state.noOfIceCreams - 1,
+        noOfIceCreams: state.noOfIceCreams - action.payload,
       };
     }
     default:

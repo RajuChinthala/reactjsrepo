@@ -7,7 +7,7 @@ function HooksIceCreamContainer() {
   const dispatch = useDispatch();
   return (
     <div>
-      <h1> No of icreams available: {noOfIceCreams}</h1>
+      <h1> Hook: icecreams available: {noOfIceCreams}</h1>
       <button onClick={() => dispatch(buyIceCream())}>Buy IceCream</button>
     </div>
   );

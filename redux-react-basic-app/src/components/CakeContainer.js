@@ -5,7 +5,7 @@ import buyCake from "../redux/cake/cakeActions.js";
 function CakeContainer(props) {
   return (
     <div>
-      <h1> No of cakes available:{props.noOfCakes}</h1>
+      <h1> Order Single: cakes available:{props.noOfCakes}</h1>
       <button onClick={props.buyCake}>Buy Cake</button>
     </div>
   );

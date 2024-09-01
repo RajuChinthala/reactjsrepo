@@ -6,7 +6,7 @@ function MultiCakeContainer(props) {
   const [number, setNumber] = useState(1);
   return (
     <div>
-      <h1> No of cakes available:{props.noOfCakes}</h1>
+      <h1> Multi Order: cakes available:{props.noOfCakes}</h1>
       <input value={number} onChange={(e) => setNumber(e.target.value)} />
       <button onClick={() => props.buyCake(number)}>Buy {number} Cake</button>
     </div>

@@ -1,8 +1,9 @@
 import { BUY_ICECREAM } from "./iceCreamTypes";
 
-const buyIceCream = () => {
+const buyIceCream = (number = 1) => {
   return {
     type: BUY_ICECREAM,
+    payload: number,
   };
 };
 
