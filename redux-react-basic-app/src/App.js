@@ -8,6 +8,7 @@ import MultiCakeContainer from "./components/MultiCakeContainer.js";
 import store from "./redux/store.js";
 import MultiIceCreamContainer from "./components/MultiIceCreamContainer.js";
 import ItemContainer from "./components/ItemContainer.js";
+import UserContainer from "./components/UserContainer.js";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
 
         <HooksCakeContainer />
         <HooksIceCreamContainer />
+        <UserContainer />
       </div>
     </Provider>
   );

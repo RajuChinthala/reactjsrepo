@@ -5,7 +5,7 @@ import buyIceCream from "../redux/icecream/iceCreamActions.js";
 function IceCreamContainer(props) {
   return (
     <div>
-      <h1> Order Single: icecreams available : {props.noOfIceCreams} </h1>
+      <h1> Single Order: Icecreams available : {props.noOfIceCreams} </h1>
       <button onClick={props.buyIceCream}>Buy IceCream</button>
     </div>
   );
